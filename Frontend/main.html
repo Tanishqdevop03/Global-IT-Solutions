@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Global IT Solutions</title>
+  <link rel="icon" type="image/png" href="images/idk.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="site-header">
+<a href="main.html" class="logo">
+  <img src="images/idk.png" class="logo-img" alt="Logo">
+  <span class="logo-text">Global IT Solutions</span>
+</a>
+  <nav class="main-nav" id="mainNav">
+    <a href="#hero" class="nav-link">Home</a>
+    <a href="#about" class="nav-link">About Us</a>
+    <a href="#services" class="nav-link">Support</a>
+    <a href="packages.html" class="nav-link">Pricing</a>
+    <a href="#lets-connect" class="nav-link">Contact</a>
+  </nav>
+
+  <!-- Mobile Menu Toggle -->
+  <div class="menu-toggle" id="menuToggle">
+    <span></span><span></span><span></span>
+  </div>
+</header>
+
+<!-- Bottom Navigation (mobile only) -->
+<nav class="bottom-nav">
+  <a href="#hero" class="nav-item">
+    <svg viewBox="0 0 24 24" fill="none">
+      <path d="M3 9.5L12 3l9 6.5V21a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V9.5z" stroke="currentColor" stroke-width="2"/>
+    </svg>
+    <span>Home</span>
+  </a>
+  <a href="packages.html" class="nav-item">
+    <svg viewBox="0 0 24 24" fill="none">
+      <path d="M3 7l9-4 9 4-9 4-9-4zm0 4l9 4 9-4M3 15l9 4 9-4" stroke="currentColor" stroke-width="2"/>
+    </svg>
+    <span>Packages</span>
+  </a>
+  <a href="#lets-connect" class="nav-item">
+    <svg viewBox="0 0 24 24" fill="none">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10z" stroke="currentColor" stroke-width="2"/>
+    </svg>
+    <span>Connect</span>
+  </a>
+</nav>
+
+<main class="scroll-container">
+
+<!-- Hero Section -->
+<section class="hero" id="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1>
+  <span style="font-weight:900;">Elite IT Support, Anytime!</span><br>
+  <span style="font-size:1.7rem; font-weight:500;">+91 97110 51151</span>
+</h1>
+      <p><strong>Email: globalitsolution@usa.com</strong></p>
+      <p>Get instant 24x7 Unlimited Support</p>
+      <div class="checklist">
+        ✔ Antivirus & Malware Removal<br>
+        ✔ Software & Hardware Support<br>
+        ✔ Data Recovery & Backups<br>
+        ✔ Cybersecurity & Hacking Prevention<br>
+        ✔ System Tune-Ups & Optimization
+      </div>
+      <p class="company-desc">
+        We specialize in reliable tech support—covering everything from hardware diagnostics and repairs to software installations, virus removal, system optimization, and personalized remote assistance. Our experts ensure seamless operation for both home and business systems, day or night.
+      </p>
+      <button class="cta-button" onclick="document.querySelector('#lets-connect').scrollIntoView({ behavior: 'smooth' });">
+  Get Started
+</button>
+    </div>
+    <div class="hero-canvas">
+      <canvas id="bgCanvas"></canvas>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="about-unreal-vibe" id="about">
+  <canvas id="aboutCanvas"></canvas>
+  <div class="about-flex">
+    <div class="about-info">
+      <h2 class="about-title">We don’t fix tech. We rewire reality.</h2>
+      <p class="about-desc">
+        At Global IT Solutions, we’re not just fixing devices — we’re empowering people. 
+        We deliver expert tech support, tailored repair services, and proactive protection for every kind of system. 
+        Whether it’s your personal laptop, home network, or an enterprise infrastructure, 
+        our certified professionals provide fast, reliable, and innovative solutions 24/7.
+      </p>
+    </div>
+    <div class="hero-cards">
+      <div class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor">
+            <circle cx="32" cy="32" r="30" stroke-width="4"/>
+            <path d="M20 44v-8a4 4 0 014-4h4v12h-8zM44 44v-8a4 4 0 00-4-4h-4v12h8z" fill="currentColor"/>
+            <path d="M24 20a8 8 0 0116 0v6" stroke-width="3"/>
+          </svg>
+        </div>
+        <h3>24/7 Support</h3>
+        <p>Always available, any time, any day.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor">
+            <polygon points="32 2 12 36 30 36 24 62 52 24 34 24 32 2" fill="currentColor"/>
+          </svg>
+        </div>
+        <h3>95% First Call Resolution</h3>
+        <p>Most issues resolved in the first contact.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor">
+            <path d="M32 4L12 14v18c0 14 9 26 20 28 11-2 20-14 20-28V14L32 4z" stroke-width="3"/>
+            <path d="M22 32l6 6 14-14" stroke-width="3"/>
+          </svg>
+        </div>
+        <h3>Certified Pros</h3>
+        <p>Trusted technicians with real skills.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section class="split-services" id="services">
+  <h2 class="split-title">Explore Our Services</h2>
+  <div class="split-tabs">
+    <button class="split-tab active" data-index="0">Hardware Support</button>
+    <button class="split-tab" data-index="1">Software Support</button>
+    <button class="split-tab" data-index="2">Antivirus</button>
+    <button class="split-tab" data-index="3">Installation Help</button>
+    <button class="split-tab" data-index="4">Data Recovery</button>
+    <button class="split-tab" data-index="5">Cybersecurity</button>
+  </div>
+  <div class="split-panel-wrapper">
+    <div class="split-panel active">
+      <div class="panel-left">
+        <h3>Hardware Support</h3>
+        <p>Our experts provide precise diagnostics, upgrades, and repairs to ensure your devices deliver peak performance with reliability and longevity. We address issues before they escalate, minimizing downtime and maximizing productivity.</p>
+      </div>
+      <div class="panel-right">
+        <div class="visual-block hardware">
+          <img src="images/harware.gif" alt="Hardware Animation">
+        </div>
+      </div>
+    </div>
+    <div class="split-panel">
+      <div class="panel-left">
+        <h3>Software Support</h3>
+        <p>From OS installation to complex app debugging, we deliver seamless, tailored solutions that keep your systems running smoothly and efficiently. Our support adapts to your unique environment, ensuring compatibility and stability.</p>
+      </div>
+      <div class="panel-right">
+        <div class="visual-block software">
+          <img src="images/softwaare.gif" alt="Software Animation">
+        </div>
+      </div>
+    </div>
+    <div class="split-panel">
+      <div class="panel-left">
+        <h3>Antivirus</h3>
+        <p>Safeguard your data with advanced antivirus deployment, thorough malware scans, and continuous real-time threat protection. We implement layered security to proactively defend against evolving cyber threats.</p>
+      </div>
+      <div class="panel-right">
+        <div class="visual-block antivirus">
+          <img src="images/antiviruss.gif" alt="Antivirus Animation">
+        </div>
+      </div>
+    </div>
+    <div class="split-panel">
+      <div class="panel-left">
+        <h3>Installation Help</h3>
+        <p>Whether it’s enterprise software or complete network setups, we ensure clean, optimized installations configured for maximum performance. Every setup is tested, verified, and fine-tuned for long-term reliability.</p>
+      </div>
+      <div class="panel-right">
+        <div class="visual-block install">
+          <img src="images/installation.gif" alt="Installation Animation">
+        </div>
+      </div>
+    </div>
+    <div class="split-panel">
+  <div class="panel-left">
+    <h3>Data Recovery</h3>
+    <p>We recover lost or deleted files, WhatsApp chats, emails, documents, and ID backups from devices and cloud accounts - safely, securely, and with maximum retention success.</p>
+  </div>
+  <div class="panel-right">
+    <div class="visual-block data-recovery">
+      <img src="images/datarecov.gif" alt="Data Recovery Animation">
+    </div>
+  </div>
+</div>
+<div class="split-panel">
+  <div class="panel-left">
+    <h3>Cybersecurity & Hacking Support</h3>
+    <p>Protect your digital life from cyber threats. We specialize in account recovery, hacking incident response, identity theft prevention, and proactive security hardening for individuals and businesses.</p>
+  </div>
+  <div class="panel-right">
+    <div class="visual-block cybersecurity">
+      <img src="images/cyberthr.gif" alt="Cybersecurity Animation">
+    </div>
+  </div>
+</div>
+  </div>
+</section>
+
+<!-- Let's Connect Section -->
+<section class="lets-connect" id="lets-connect">
+  <div class="lets-connect-inner">
+    <div class="lets-info">
+      <h2>Let’s Connect</h2>
+      <p>Need help, want a quote, or just want to say hello? Our experts are here 24/7 to assist you with any technical challenge.</p>
+      <div class="lets-contact-details">
+        <p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.21.49 2.54.76 3.92.76a1 1 0 011 1V20a1 1 0 01-1 1C10.07 21 3 13.93 3 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.38.27 2.71.76 3.92a1 1 0 01-.21 1.11l-2.2 2.2z"/>
+          </svg>
+       <span style="font-size:1.1rem; font-weight:800;">+91 97110 51151</span>
+        </p>
+        <p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M20 4H4a2 2 0 00-2 2v0 12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+          </svg>
+        <span style="font-size:1.1rem; font-weight:800;"> globalitsolution@usa.com  </span>
+        </p>
+      </div>
+    </div>
+    <div class="connect-form-box">
+      <form class="connect-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <input type="phnumber" placeholder="Your Phone Number">
+        <input type="text" placeholder="Subject" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>Global IT Solutions</h3>
+      <p>Global IT Solutions delivers reliable tech support and innovative solutions for homes and businesses. From antivirus to hardware diagnostics, we ensure systems run smoothly, day or night.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Support</a></li>
+        <li><a href="packages.html">Pricing</a></li>
+        <li><a href="#lets-connect">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>Reach Us</h4>
+      <address>
+        G4B VSS Mall, Mangalam Place<br />
+        M2K Rohini, Delhi-110085<br />
+        Phone: +91 97110 51151<br />
+        Email: globalitsolution@usa.com
+      </address>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 All rights reserved. Global IT Solutions.</p>
+  </div>
+</footer>
+
+</main>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Packages | Global IT Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #543ac9;
+      --highlight: #7c5fe6;
+      --highlight-dark: #5b3fc0;
+      --text-dark: #333;
+      --text-light: #888;
+      --white: #fff;
+      --card-bg: #fefeff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #f9f7ff, #ece8ff);
+      color: var(--text-dark);
+    }
+
+    /* Back Button */
+    .back-home {
+      display: inline-block;
+      margin: 1rem 6%;
+      padding: 0.7rem 1.4rem;
+      background: linear-gradient(135deg, var(--highlight), var(--primary));
+      color: white;
+      border-radius: 30px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(124, 95, 230, 0.3);
+    }
+    .back-home:hover {
+      background: linear-gradient(135deg, var(--primary), var(--highlight-dark));
+      transform: translateY(-2px);
+      box-shadow: 0 6px 14px rgba(124, 95, 230, 0.5);
+    }
+
+    .pricing-section {
+      padding: 3rem 6%;
+      text-align: center;
+      animation: fadeIn 1s ease;
+    }
+
+    .pricing-title {
+      font-size: 2.4rem;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .pricing-subtitle {
+      font-size: 1rem;
+      color: var(--text-dark);
+      margin-bottom: 2rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .pricing-cards {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .pricing-card {
+      flex: 1;
+      min-width: 280px;
+      max-width: 340px;
+      background: var(--card-bg);
+      border-radius: 24px;
+      padding: 2rem 1.5rem;
+      box-shadow: 0 15px 30px rgba(124, 95, 230, 0.05);
+      transition: all 0.4s ease;
+      border: 2px solid transparent;
+    }
+
+    .pricing-card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 20px 40px rgba(124, 95, 230, 0.15);
+      border: 2px solid var(--highlight);
+    }
+
+    .pricing-card.highlighted {
+      background: linear-gradient(135deg, #e9e3ff, #dbd3ff);
+      border: 2px solid var(--highlight);
+    }
+
+    .pricing-card h3 {
+      font-size: 1.5rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .price-tag {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--highlight);
+      margin-bottom: 1.2rem;
+    }
+
+    .price-tag span {
+      font-size: 0.9rem;
+      font-weight: 400;
+      color: var(--text-light);
+    }
+
+    .features-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1.8rem 0;
+      font-size: 0.95rem;
+      color: var(--text-dark);
+      text-align: left;
+    }
+
+    .features-list li {
+      padding: 0.3rem 0;
+    }
+
+    /* Contact Button */
+    .contact-link {
+      display: inline-block;
+      text-decoration: none;
+      background: linear-gradient(135deg, var(--highlight), var(--primary));
+      color: white;
+      padding: 0.8rem 1.4rem;
+      border-radius: 30px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(124, 95, 230, 0.3);
+    }
+    .contact-link:hover {
+      background: linear-gradient(135deg, var(--primary), var(--highlight-dark));
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(124, 95, 230, 0.4);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #999;
+      padding: 2rem 6%;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .pricing-section {
+        padding: 2rem 4%;
+      }
+      .pricing-title {
+        font-size: 2rem;
+      }
+      .pricing-card {
+        padding: 1.6rem 1.2rem;
+      }
+    }
+    @media (max-width: 480px) {
+      .pricing-title {
+        font-size: 1.8rem;
+      }
+      .pricing-subtitle {
+        font-size: 0.9rem;
+      }
+      .pricing-card {
+        min-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<a href="main.html" class="back-home">← Back to Home</a>
+
+<section class="pricing-section" id="pricing">
+  <h2 class="pricing-title">Our Packages</h2>
+  <p class="pricing-subtitle">These packages are for description only. Please contact us for purchase or subscription details.</p>
+
+  <div class="pricing-cards">
+    <div class="pricing-card">
+      <h3>Basic</h3>
+      <p class="price-tag">$49<span>/month</span></p>
+      <ul class="features-list">
+        <li>✔ 24/7 Remote Support</li>
+        <li>✔ Antivirus Installation</li>
+        <li>✔ Basic Hardware Diagnostics</li>
+        <li>✘ No Priority Service</li>
+      </ul>
+      <a href="main.html#lets-connect" class="contact-link">Contact Us</a>
+    </div>
+
+    <div class="pricing-card highlighted">
+      <h3>Standard</h3>
+      <p class="price-tag">$89<span>/month</span></p>
+      <ul class="features-list">
+        <li>✔ All Basic Features</li>
+        <li>✔ Full System Tune-Up</li>
+        <li>✔ Priority Troubleshooting</li>
+        <li>✔ Remote + On-call Access</li>
+      </ul>
+      <a href="main.html#lets-connect" class="contact-link">Contact Us</a>
+    </div>
+
+    <div class="pricing-card">
+      <h3>Premium</h3>
+      <p class="price-tag">$139<span>/month</span></p>
+      <ul class="features-list">
+        <li>✔ All Standard Features</li>
+        <li>✔ Dedicated IT Expert</li>
+        <li>✔ Software + Network Install</li>
+        <li>✔ Emergency Recovery</li>
+      </ul>
+      <a href="main.html#lets-connect" class="contact-link">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2025 Global IT Solutions. All rights reserved.
+</footer>
+
+</body>
+</html>
