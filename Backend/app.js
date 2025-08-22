@@ -5,6 +5,7 @@ const queryRoutes = require("./routes/query.route");
 
 const app = express();
 const allowed = [
+  "https://www.globalitsolutions-in.net"
   "https://global-it-solutions-pearl.vercel.app",
   "http://localhost:5501/index.html"
 ]
