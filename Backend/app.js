@@ -21,10 +21,12 @@ app.use(
         callback(new Error("Not allowed by CORS"));
       }
     },
-    methods: ["GET", "POST"],
+    methods: ["GET", "POST", "OPTIONS"],  // ✅ OPTIONS allow karo
     credentials: true,
   })
 );
+
+app.options("*", cors());
 
 app.use(express.json());
 
