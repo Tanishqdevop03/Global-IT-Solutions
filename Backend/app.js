@@ -7,7 +7,7 @@ const app = express();
 
 const allowedOrigins = [
   "https://global-it-solutions-pearl.vercel.app",   // Vercel
-  "https://globalitsolutions-in.net",              // Custom domain
+  "https://globalitsolutions-in.net/",              // Custom domain
   "https://www.globalitsolutions-in.net",
   "http://localhost:5501"
 ];
