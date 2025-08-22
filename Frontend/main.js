@@ -228,9 +228,9 @@ form.addEventListener("submit", async (e) => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
     });
-  
+
     const data = await res.json();
-  
+
     if (res.ok) {
       statusEl.textContent = "✅ Message sent successfully!";
       form.reset();
@@ -241,5 +241,5 @@ form.addEventListener("submit", async (e) => {
     console.error(err);
     statusEl.textContent = "❌ Something went wrong!";
   }
-
 });
+
