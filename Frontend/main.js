@@ -242,3 +242,4 @@ form.addEventListener("submit", async (e) => {
     statusEl.textContent = "❌ Something went wrong!";
   }
 });
+
