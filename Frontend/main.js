@@ -223,7 +223,7 @@ form.addEventListener("submit", async (e) => {
   statusEl.textContent = "Sending...";
 
   try {
-    const res = await fetch("http://localhost:3000/api/send-query", {
+    const res = await fetch("https://global-it-solutions.onrender.com/api/send-query", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
