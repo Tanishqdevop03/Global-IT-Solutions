@@ -223,14 +223,14 @@ form.addEventListener("submit", async (e) => {
   statusEl.textContent = "Sending...";
 
   try {
-    const res = await fetch("https://global-it-solutions.onrender.com/api/send-query", {
+    const res = await fetch("https://globalitsolutions-in.net/api/send-query", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
     });
-
+  
     const data = await res.json();
-
+  
     if (res.ok) {
       statusEl.textContent = "✅ Message sent successfully!";
       form.reset();
@@ -241,4 +241,5 @@ form.addEventListener("submit", async (e) => {
     console.error(err);
     statusEl.textContent = "❌ Something went wrong!";
   }
+
 });
