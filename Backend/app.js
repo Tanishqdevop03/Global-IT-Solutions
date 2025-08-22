@@ -5,6 +5,9 @@ const queryRoutes = require("./routes/query.route");
 
 const app = express();
 
+// API routes
+app.use("/api", queryRoutes);
+
 const allowedOrigins = [
   "https://global-it-solutions-pearl.vercel.app",   // Vercel
   "https://globalitsolutions-in.net/",              // Custom domain
@@ -29,10 +32,6 @@ app.use(
 app.options("*", cors());
 
 app.use(express.json());
-
-// API routes
-app.use("/api", queryRoutes);
-
 // Health check
 app.get("/health", (_, res) => res.send("OK"));
 
