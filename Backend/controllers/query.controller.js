@@ -1,3 +1,4 @@
+
 const nodemailer = require("nodemailer");
 
 if (!process.env.COMPANY_EMAIL || !process.env.COMPANY_EMAIL_PASS) {
@@ -29,4 +30,15 @@ Message:
 ${message}`,
   };
 
+  try {
+    await transporter.sendMail(mailOptions);
+    res.status(200).json({ message: "Query sent successfully!" });
+  } catch (err) {
+    console.error("Email send error:", err);
+    if (err.code === "EAUTH") {
+      return res.status(500).json({ error: "Email auth failed. Check App Password." });
+    }
+    res.status(500).json({ error: "Failed to send email." });
+  }
+};
 
